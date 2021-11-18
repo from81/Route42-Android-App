@@ -5,6 +5,7 @@ The project required groups of 4 students to create an Android application to de
 This project was undertaken over the course of 6 weeks (second half of the semester).
 
 We developed a fitness tracking social networking app for Android, and received one of the highest marks.
+
 For more info, see [Design Document](docs/report.md).
 
 # Changelog
