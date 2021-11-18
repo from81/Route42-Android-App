@@ -3,8 +3,6 @@ Group project for [COMP6442 Software Construction](https://programsandcourses.an
 
 For more info, see [Design Document](docs/report.md).
 
-Due to migrating from gitlab, API keys have also been migrated. However, they have all been deactivated and removed.
-
 # Changelog
 
 1. Set up initial repository and gradle project.
@@ -111,3 +109,7 @@ If you want to see the images rendered in the app, you need to open `locahlhost:
 # Links
 
 - [REST API Repository](https://github.com/from81/Route42-Database-API)
+
+# Note
+
+Due to migrating from gitlab, API keys have also been migrated. However, they have all been deactivated and removed.
