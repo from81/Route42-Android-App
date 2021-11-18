@@ -1,6 +1,9 @@
 # About
+Group project for [COMP6442 Software Construction](https://programsandcourses.anu.edu.au/course/COMP6442), a course taken as part of Master of Computing at Australian National University.
 
-See [Design Document](docs/report.md)
+For more info, see [Design Document](docs/report.md).
+
+Due to migrating from gitlab, API keys have also been migrated. However, they have all been deactivated and removed.
 
 # Changelog
 
