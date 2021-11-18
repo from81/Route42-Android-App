@@ -1,4 +1,4 @@
-# Route 42 Design Document
+# Route 42
 
 ## Table of Contents
 
@@ -14,26 +14,6 @@
 | u7269158 | John (Min Jae) Kim | Data Structure, Feature Testing |
 | u7234659 | Honggic Oh | Search, Feature Testing |
 | u7199021| Theo Darmawan | Full-Stack |
-
-### Meeting minutes
-
-- [Meeting 1 - 31st August](meetings/aug31.md)
-- [Meeting 2 - 7th September](meetings/sep7.md)
-- [Meeting 3 - 8th October](meetings/oct8.md)
-
-### Conflict Resolution Protocol
-
-- Conflicts will be resolved through civil discussion and democratic voting process involving all
-  parties interested in the matter.
-	
-	- For example, if someone wants to change the direction or the concept of the app, everyone must
-	  be involved in the decision-making. If someone wants to change a small class in the project,
-	  then that can be done either through voting, or by mutual agreement upon directly discussing
-    with the person who created the class.
-  
-- Task assignments: Trello Kanban board
-
-  <img src="Report.assets/trello2.png" alt="trello2" style="zoom:50%;" />
 
 ## Application Description
 
@@ -367,80 +347,3 @@ Firebase Integration
    without restarting their application. (very hard)
 
 ---
-
-# Appendix
-
-## Third-party libraries used
-
-### Android App
-
-```
-implementation 'androidx.annotation:annotation:1.2.0'
-implementation 'androidx.activity:activity:1.2.0'
-implementation 'androidx.fragment:fragment:1.3.0'
-implementation 'androidx.appcompat:appcompat:1.3.1'
-implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
-implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
-implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
-implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
-implementation 'androidx.multidex:multidex:2.0.1'
-implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-implementation "androidx.work:work-runtime:2.7.0"
-
-// ------ utils ------
-implementation 'com.google.code.gson:gson:2.8.8'
-implementation 'com.google.android.material:material:1.4.0'
-implementation 'com.jakewharton.timber:timber:5.0.1'
-
-// ------ Navigation Component ------
-def nav_version = "2.3.5"
-androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
-implementation "androidx.navigation:navigation-compose:2.4.0-alpha08"
-implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
-implementation "androidx.navigation:navigation-fragment:$nav_version"
-implementation "androidx.navigation:navigation-ui:$nav_version"
-
-// ----------- Glide ----------------
-implementation 'com.github.bumptech.glide:glide:4.12.0'
-annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-
-// ----------- Google Maps ----------
-implementation 'com.google.android.gms:play-services-location:18.0.0'
-implementation 'com.google.android.gms:play-services-maps:17.0.1'
-
-// ----------- REST API ------------
-implementation 'com.squareup.retrofit2:retrofit:2.8.0'
-implementation 'com.squareup.retrofit2:converter-gson:2.8.0'
-implementation 'com.squareup.okhttp3:logging-interceptor:3.12.7'
-
-// ----------- Firebase ------------
-implementation platform('com.google.firebase:firebase-bom:28.4.0')
-implementation 'com.google.firebase:firebase-analytics'
-implementation 'com.google.firebase:firebase-auth'
-implementation 'com.google.firebase:firebase-firestore:23.0.3'
-implementation 'com.firebaseui:firebase-ui-firestore:6.2.1'
-implementation 'com.google.firebase:firebase-storage'
-implementation 'com.firebaseui:firebase-ui-storage:7.2.0'
-implementation 'com.firebase:geofire-android-common:3.1.0'
-
-// ----------- Tests ---------------
-testImplementation 'junit:junit:4.+'
-androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-androidTestImplementation 'androidx.test.espresso:espresso-intents:3.4.0'
-androidTestImplementation 'androidx.test:runner:1.4.0'
-androidTestImplementation 'androidx.test:rules:1.4.0'
-implementation "androidx.profileinstaller:profileinstaller:1.1.0-alpha04"```
-```
-
-### REST API
-
-```
-implementation 'com.google.firebase:firebase-admin:8.1.0'
-implementation 'org.springframework.boot:spring-boot-starter-web:2.5.5'
-implementation 'org.springframework.cloud:spring-cloud-gcp-starter-firestore:1.2.8.RELEASE'
-developmentOnly 'org.springframework.boot:spring-boot-devtools:2.5.5'
-```
-
-
-
