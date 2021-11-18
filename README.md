@@ -83,6 +83,11 @@ See [Design Document](docs/report.md)
 6. Open the project root directory in Android Studio. It should recognize `build.gradle` files and set up the project for you.
 7. Compile and run.
 
+# Testing
+```
+./gradlew createDebugCoverageReport
+```
+
 # Fake data
 
 In the app-level `build.gradle` file, you will see the following line:
@@ -100,11 +105,6 @@ As long as the emulators don't turn off, once the data is inserted you can chang
 In summary, you only need to do the above steps once, each time you start the emulators.
 If you want to see the images rendered in the app, you need to open `locahlhost:4000` and go to `Cloud storage` and manually create the image files.
 
-# Testing
-```
-./gradlew createDebugCoverageReport
-```
-
 # Links
 
-- [REST API Repository](https://gitlab.cecs.anu.edu.au/u7233149/route42-rest-api)
+- [REST API Repository](https://github.com/from81/Route42-Database-API)
