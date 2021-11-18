@@ -1,6 +1,10 @@
 # About
 Group project for [COMP6442 Software Construction](https://programsandcourses.anu.edu.au/course/COMP6442), a course taken as part of Master of Computing at Australian National University.
 
+The project required groups of 4 students to create an Android application to demonstrate concepts learned in class.
+This project was undertaken over the course of 6 weeks (second half of the semester).
+
+We developed a fitness tracking social networking app for Android, and received one of the highest marks.
 For more info, see [Design Document](docs/report.md).
 
 # Changelog
