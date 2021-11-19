@@ -1,6 +1,7 @@
 name: Measure coverage
 
 on:
+  push:
   pull_request:
     types: [assigned, opened, synchronize, reopened]
 
@@ -38,14 +39,12 @@ jobs:
         with:
           paths: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          min-coverage-overall: 40
-          min-coverage-changed-files: 60
-          
-
+          min-coverage-overall: 0
+          min-coverage-changed-files: 0
 
       - name: Upload to Codecov
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./output/reports/coverage/jacoco.xml
+          file: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
           flags: unittests
