@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 1.8
@@ -20,7 +20,7 @@ jobs:
         run: |
           # chmod +x gradlew
           ./gradlew createDebugCoverageReport
-          # ./gradlew testCoverage
+#          ./gradlew testCoverage
           
       - name: Cache Gradle packages
         uses: actions/cache@v2
