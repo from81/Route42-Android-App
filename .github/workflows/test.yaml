@@ -17,15 +17,6 @@ jobs:
           java-version: '11'
       - name: Run Coverage
         run: ./gradlew jacocoTestReport
-      - name: Cache Gradle packages
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: runner.os−gradle−{{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
       - name: Upload to Codecov
         uses: codecov/codecov-action@v2
         with:
