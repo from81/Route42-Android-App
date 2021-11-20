@@ -13,15 +13,8 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-#       - name: Gradle Wrapper Validation
-#         uses: gradle/wrapper-validation-action@v1.0.4
-
       - name: Run Coverage
-        run: |
-#          ./gradlew createDebugCoverageReport
-#          ./gradlew test
-          ./gradlew jacocoTestReport
-
+        run: ./gradlew jacocoTestReport
       - name: Cache Gradle packages
         uses: actions/cache@v2
         with:
@@ -31,18 +24,6 @@ jobs:
           key: runner.os−gradle−{{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
-            
-#      - name: Add coverage to PR
-#        id: jacoco
-#        uses: madrapps/jacoco-report@v1.2
-#        with:
-#          paths: ${{ github.workspace }}/app/build/jacoco/jacoco.xml
-#          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-#          min-coverage-overall: 40
-#          min-coverage-changed-files: 60
-#
-
-
       - name: Upload to Codecov
         uses: codecov/codecov-action@v2
         with:
