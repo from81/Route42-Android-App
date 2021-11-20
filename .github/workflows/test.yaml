@@ -1,6 +1,7 @@
 name: Measure coverage
 
 on:
+  push:
   pull_request:
     types: [assigned, opened, synchronize, reopened]
 

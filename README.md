@@ -1,7 +1,5 @@
 [![codecov](https://codecov.io/gh/from81/Route42-Android-App/branch/master/graph/badge.svg?token=1ywMys6vfM)](https://codecov.io/gh/from81/Route42-Android-App)
 
-test 
-
 # About
 
 Group project for [COMP6442 Software Construction](https://programsandcourses.anu.edu.au/course/COMP6442), a course taken as part of Master of Computing at Australian National University.
