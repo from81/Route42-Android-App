@@ -94,6 +94,7 @@ For more info, see [Design Document](docs/report.md).
 
 # Testing
 ```
+./gradlew test
 ./gradlew createDebugCoverageReport
 ```
 

@@ -3,6 +3,7 @@ plugins {
     id 'com.google.gms.google-services'
     id 'androidx.navigation.safeargs'
     id 'jacoco'
+    id 'com.dicedmelon.gradle.jacoco-android'
 }
 
 android {
@@ -141,20 +142,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.2.0'
 }
 
-task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
-    reports {
-        xml.enabled = true
-        html.enabled = true
-    }
-
-    def fileFilter = ['com/comp6442/route42/ui/fragment/*',
-                      'com/comp6442/route42/ui/activity/*']
-
-    afterEvaluate {
-        classDirectories.setFrom(files(classDirectories.files.collect {
-            fileTree(dir: it, exclude: fileFilter)
-        }))
-    }
+//By default your report will be in [root_project]/[project_name]/build/jacoco/
+jacocoAndroidUnitTestReport {
+    csv.enabled false
+    html.enabled true
+    xml.enabled true
+    excludes += ['**/AutoValue_*.*',
+                 '**/ui/activity/**',
+                 '**/ui/fragment/**',
+                 '**/api/*',
+                 '**/data/repository/**',
+                 '**/databinding/**',
+                 '**/bumptech/glide/**']
 }
 
 android {
