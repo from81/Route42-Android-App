@@ -36,7 +36,7 @@ jobs:
 #        id: jacoco
 #        uses: madrapps/jacoco-report@v1.2
 #        with:
-#          paths: ${{ github.workspace }}/build/reports/tests/testDebugUnitTest/testCoverage.xml
+#          paths: ${{ github.workspace }}/app/build/jacoco/jacoco.xml
 #          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 #          min-coverage-overall: 40
 #          min-coverage-changed-files: 60
@@ -47,5 +47,5 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./output/reports/coverage/jacoco.xml
+          file: ${{ github.workspace }}/app/build/jacoco/jacoco.xml
           flags: unittests
