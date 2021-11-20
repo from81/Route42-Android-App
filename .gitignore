@@ -13,15 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
-gradle
 google_maps_api.xml
 /firebase-debug.log
 /ui-debug.log
 /firestore-debug.log
 api.xml
-gradle.properties
 *.ipynb
 /docs/softwareconstruction42-firebase-adminsdk-5s99m-f2a401fa7e.json
 *.exe
 classes_methods.txt
-docs/Report.assets/1*VSXfNBCsxa3_wCOAqR88aQ.png
+docs/Report.assets/1*VSXfNBCsxa3_wCOAqR88aQ.png!/gradle/
